@@ -30,6 +30,7 @@ class RLCommMqttESQ:
             if (rb['robot_id']==1):
                 self.__mqtt_client.publish(topic="UFRBots/transmit_robot", payload=f"({rb['robot_id']},{abs(rb['wheel_left'])},{abs(rb['wheel_right'])})")
                 time.sleep(5)
+          
             if (rb['robot_id']==2):
                 self.__mqtt_client.publish(topic="UFRBots/transmit_robot", payload=f"({rb['robot_id']},{abs(rb['wheel_left'])},{abs(rb['wheel_right'])})")
                 time.sleep(5)  
